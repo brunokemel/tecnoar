@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Typography, Grid, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import tecnoarImage from '../image/tecnoar.png';
 
 const AboutSection = styled(Box)(({ theme }) => ({
   padding: theme.spacing(8, 0),
@@ -36,16 +37,23 @@ const About = () => {
             <Box
               sx={{
                 height: 400,
-                backgroundColor: 'grey.300',
                 borderRadius: 2,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                overflow: 'hidden',
               }}
             >
-              <Typography variant="h6" color="text.secondary">
-                Imagem da Oficina
-              </Typography>
+              <img
+                src={tecnoarImage}
+                alt="Imagem da Oficina TecnoAR"
+                style={{
+                  maxWidth: '100%',
+                  maxHeight: '100%',
+                  objectFit: 'cover',
+                  borderRadius: '16px',
+                }}
+              />
             </Box>
           </Grid>
         </Grid>
@@ -54,4 +62,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;

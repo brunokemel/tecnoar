@@ -4,7 +4,6 @@ import {
   Container,
   Grid,
   Typography,
-  Link,
   IconButton,
 } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -73,4 +72,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

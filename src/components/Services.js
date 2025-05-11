@@ -5,7 +5,7 @@ import {
   Grid,
   Card,
   CardContent,
-  CardMedia,
+  
   Box,
 } from '@mui/material';
 import BuildIcon from '@mui/icons-material/Build';
@@ -76,4 +76,4 @@ const Services = () => {
   );
 };
 
-export default Services; 
+export default Services;
