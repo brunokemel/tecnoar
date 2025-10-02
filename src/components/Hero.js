@@ -28,6 +28,7 @@ const Hero = () => {
           color="secondary"
           size="large"
           sx={{ mt: 4 }}
+          href='#contact'
         >
           Agende seu Serviço
         </Button>

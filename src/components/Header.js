@@ -8,6 +8,7 @@ import {
   Drawer,
   List,
   ListItem,
+  ListItemButton,
   ListItemText,
   Box,
   useMediaQuery,
@@ -29,8 +30,10 @@ const Header = () => {
   const drawer = (
     <List>
       {menuItems.map((item) => (
-        <ListItem button key={item} onClick={handleDrawerToggle}>
-          <ListItemText primary={item} />
+        <ListItem key={item} disablePadding>
+          <ListItemButton onClick={handleDrawerToggle}>
+            <ListItemText primary={item} />
+          </ListItemButton>
         </ListItem>
       ))}
     </List>
